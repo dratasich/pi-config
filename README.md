@@ -29,7 +29,25 @@ I don't:
 
 ## Features
 
-{to be filled in later}
+- **AGENTS.md** — global agent instructions: who I am, rules, blacklist, TDD, KISS
+- **settings.json** — theme, packages, and [`pi-guard`](https://github.com/jdiamond/pi-guard) rules: auto-allows safe commands (`find`, `ls`, `grep`, `git status/diff`, `uv run pytest`); blocks dangerous ones (`rm`, `git merge/reset/rebase/revert`, `uv tool`) and blacklisted files (`*.env*`, `*secret*`, `*password*`, `*token*`, `secrets/**`, `credentials/**`, `*.pem/key/crt/p12`); asks for everything else
+
+## Deploy
+
+Clone directly as `~/.pi/agent/` — pi auto-discovers everything from there:
+
+```bash
+git clone git@github.com:dratasich/pi-config.git ~/.pi/agent
+
+# install extensions
+pi install npm:pi-guard
+```
+
+To update:
+
+```bash
+cd ~/.pi/agent && git pull
+```
 
 ## References
 
