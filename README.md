@@ -41,6 +41,12 @@ git clone git@github.com:dratasich/pi-config.git ~/.pi/agent
 
 # install extensions
 pi install npm:pi-guard
+
+# under test
+https://github.com/robhowley/pi-structured-return
+https://github.com/MasuRii/pi-rtk-optimizer
+https://github.com/MasuRii/pi-tool-display
+https://github.com/nicobailon/pi-powerline-footer
 ```
 
 To update:
@@ -53,3 +59,4 @@ cd ~/.pi/agent && git pull
 
 - My personal [opencode-config](https://github.com/dratasich/opencode-config)
 - Input from HazAT's [pi-config](https://github.com/HazAT/pi-config)
+- [oh-my-pi](https://github.com/can1357/oh-my-pi)

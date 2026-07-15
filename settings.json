@@ -1,7 +1,11 @@
 {
   "theme": "dark",
   "packages": [
-    "npm:pi-guard"
+    "npm:pi-guard",
+    "npm:@robhowley/pi-structured-return",
+    "npm:pi-rtk-optimizer",
+    "npm:pi-tool-display",
+    "npm:pi-powerline-footer"
   ],
   "guard": {
     "rules": {
@@ -44,5 +48,9 @@
         "*": "ask"
       }
     }
-  }
+  },
+  "lastChangelogVersion": "0.80.7",
+  "defaultProvider": "llama-cpp",
+  "defaultModel": "devstral-small-2507",
+  "defaultThinkingLevel": "medium"
 }
